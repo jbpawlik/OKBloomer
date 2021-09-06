@@ -21,7 +21,7 @@
 //= require Chart.bundle
 //= require chartkick
 
-import "chartkick/chart.js";
+// import "chartkick/chart.js";
 
 // $('.collapseOne').collapse()
 
