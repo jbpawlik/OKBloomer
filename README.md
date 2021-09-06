@@ -1,65 +1,36 @@
-# Plant Life
+# OKBloomer
 
-## By Adrian Camacho, Kyle Kay-Perez, Ben Pahwlik, Araceli Valdovinos
-
----
+### By Adrian Camacho, Kyle Kay-Perez, James Benjamin Pawlik, and Araceli Valdovinos
 
 ### Project Description
-* This project is a plant health with some social aspects and leaderboard aspects. It will allow you to track your plant health, upload photos of your plant, keep your watering calendar, engage in messaging with other users, and compete to be the best plant parent you can be.
 
+OKBloomer is a plant health tracking application with social media features. It allows a user to sign up, create pages for their plants, track plant health, and receive watering and care reminders. The app makes calls to an API that retrieves general information about the user's plants. There is a leaderboard for the users with the healthiest plants. The app has a messaging system for users to communicate with each other.
 ---
+### Technologies Used
+OKBloomer is written in Ruby on Rails. The database was created using PostgreSQL and seeded with the Faker gem. The app makes API calls to [Open Farm](http://openfarm.css). API calls were tested with Postman. The HTML-embedded Ruby pages were styled using Sass, SCSS, and Bootstrap. Graphs were generated using the Chartkick gem. Authorization and authentication are done through the ActiveAdmin and Devise gems. Pagination is achieve with the Kaminari gem. Testing is done with RSpec.
+---
+### Installation Instructions
+1. If you do not have Ruby installed, follow the instructions at [Ruby](https://www.ruby-lang.org/en/)
+2. Install PostgreSQL by following the instructions at [PostgreSQL](https://www.postgresql.org/download/)
+3. Open a terminal in the destination directory and run 'gem install bundler'
+4. Run 'postgres' to open an SQL server
+5. Run 'git clone https://github.com/jbpawlik/OKBloomer'
+6. Navigate to the top level of the directory and run 'bundle install' in your terminal to install dependencies
+7. Run 'rake db:create' and then 'rake db:migrate' to create a database and migrate tables. The database can be reset by running 'rake db:reset' or re-seeded by running 'rake db:seed'. Seeding the database will create sample users, plants, and messages; login information can be found in db/seeds.rb. 
+8. Run the site using the terminal command 'rails s' and navigate to localhost:3000. NOTE: it is possible that your machine assigned the server to another address; this can be checked by reading the terminal log generated after running 'rails s'.
+9. Tests can be run with the 'rspec' terminal command
+---
+### Known Bugs
+No bugs have been reported at this time. Please open a pull request if you run into performance issues.
+---
+### Contact Info
 
-#### Shortcuts
-- [Tech Stack](#tech-stack)
-- [Description](#project-description)
-- [Setup/Installation Requirements](#setup/installation-requirements)
-- [License](#license)
-- [Contact Information](#contact-information)
----
-### Tech Stack :floppy_disk:
-* [Markdown](https://www.markdownguide.org/)
-* [VS studio](https://code.visualstudio.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Ruby](https://www.ruby-lang.org/en/)
-* [Postgresql](https://www.postgresql.org/)
-* [Rails](https://rubyonrails.org/)
-* [Ruby Gems](https://rubygems.org/)
-* _sass_
-* _scss_
-* _Node.js_
-* _HTML_
----
-### Installation Instructions :pushpin:
-* Ruby is required, install with the instructions at [Ruby](https://www.ruby-lang.org/en/)
-* Install bundler in your terminal with "gem install bundler"
-* Install postgres if not already installed and run the terminal command "postgres" to open a SQL server.
-* Clone this repo: [github](https://github.com/professional-pigeon/Plant-Life)
-* Navigate to the top level of the directory and run "bundle install" in your terminal to install dependencies
-* Run "rake db:create" and then "rake db:migrate" to create a database and migrate tables.
-* Run command "rake db:seed" to seed sample data and create and admin user. Admin account info is in the seed file, will be removed when website is live.
-* Run the site on your local machine using the terminal command "rails s" and navigate to localhost:3000 (or address provided when server starts)
-* To run tests run the command "rspec" in the root directory of the terminal.
----
-### Known Bugs :bug:
-1. No Known Bugs.
-2. Please open a pull request if you have any issues!
----
-### Test Suite/Specification :chart_with_upwards_trend:
+The authors can be reached at: <adriancamacho18@gmail.com>, <kyle.kayperez@gmail.com>, <james.benjamin.pawlik@gmail.com>, <valdovinosaraceli50@gmail.com>
 
-> See [spec folder](https://github.com/professional-pigeon/Plant-Life/tree/main/spec) for rspec test suite which includes 7 passing tests. View test results from project directory by running `rspec`.
----
-### Contact Info :inbox_tray:
+### __License__
+This software is licensed under the [BSD license](license.txt).
 
-You can reach us at: <adriancamacho18@gmail.com>, <kyle.kayperez@gmail.com>, <james.benjamin.pawlik@gmail.com>, <valdovinosaraceli50@gmail.com> :rocket:
-___
-### License is GPLv3 and I make no claim to copyright. :guardsman:
-<br />
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
-> You can't steal what is freely given. Enjoy!
-<br />
-<br />
-<br />
-<br />
-<p align="center">
-  <small>Made in Portland, Oregon.</small>
-</p>
+Copyright (c) 2021 Adrian Camacho, Kyle Kay-Perez, James Benjamin Pawlik, and Araceli Valdovinos
+
