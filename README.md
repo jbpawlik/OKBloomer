@@ -19,6 +19,8 @@ OKBloomer is written in Ruby on Rails. The database was created using PostgreSQL
 7. Run 'rake db:create' and then 'rake db:migrate' to create a database and migrate tables. The database can be reset by running 'rake db:reset' or re-seeded by running 'rake db:seed'. Seeding the database will create sample users, plants, and messages; login information can be found in db/seeds.rb. 
 8. Run the site using the terminal command 'rails s' and navigate to localhost:3000. NOTE: it is possible that your machine assigned the server to another address; this can be checked by reading the terminal log generated after running 'rails s'.
 9. Tests can be run with the 'rspec' terminal command
+
+Alternately, visit the live deployment on [Heroku](http://okbloomer.herokuapp.com). You can sign up or use the test account (email: test@test.com, password: User2002!)
 ---
 ### Known Bugs
 No bugs have been reported at this time. Please open a pull request if you run into performance issues.
