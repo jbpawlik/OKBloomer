@@ -2,6 +2,8 @@
 
 ### By Adrian Camacho, Kyle Kay-Perez, James Benjamin Pawlik, and Araceli Valdovinos
 
+<img src="https://github.com/jbpawlik/OKBloomer/blob/main/app/assets/images/OKBloomerComposite.png?raw=true" width=600em>
+
 ### Project Description
 
 OKBloomer is a plant health tracking application with social media features. It allows a user to sign up, create pages for their plants, track plant health, and receive watering and care reminders. The app makes calls to an API that retrieves general information about the user's plants. There is a leaderboard for the users with the healthiest plants. The app has a messaging system for users to communicate with each other.
